@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=600 height=800></canvas>
+      <canvas id="unity-canvas" width=1280 height=720></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/game2d_jump.loader.js";
+      var loaderUrl = buildUrl + "/buildweb.loader.js";
       var config = {
-        dataUrl: buildUrl + "/game2d_jump.data",
-        frameworkUrl: buildUrl + "/game2d_jump.framework.js",
-        codeUrl: buildUrl + "/game2d_jump.wasm",
+        dataUrl: buildUrl + "/buildweb.data",
+        frameworkUrl: buildUrl + "/buildweb.framework.js",
+        codeUrl: buildUrl + "/buildweb.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "game2d_jump",
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "600px";
-        canvas.style.height = "800px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       loadingBar.style.display = "block";
